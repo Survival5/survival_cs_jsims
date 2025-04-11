@@ -6,36 +6,35 @@ package domain;
 
 /**
  *
- * @author Admin
+ * @author Besu
  */
-public class FeldOfStudy {
-    
+public class FieldOfStudy {
     int id;
     String name;
-    int departmentid;
+    int departmentId;
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
+    public int getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getDepartmentid() {
-        return departmentid;
-    }
-
-    public void setDepartmentid(int departmentid) {
-        this.departmentid = departmentid;
+    public void setDepartmentId(int departmentId) {
+        this.departmentId = departmentId;
     }
     
     
