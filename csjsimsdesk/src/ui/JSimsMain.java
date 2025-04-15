@@ -34,6 +34,7 @@ public class JSimsMain extends javax.swing.JFrame {
         mnuiNewCollege = new javax.swing.JMenuItem();
         mnuiNewDepartment = new javax.swing.JMenuItem();
         mnuiViewColleges = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -83,6 +84,14 @@ public class JSimsMain extends javax.swing.JFrame {
             }
         });
         mnuOrganization.add(mnuiViewColleges);
+
+        jMenuItem1.setText("NewFieldOfStudy");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        mnuOrganization.add(jMenuItem1);
 
         menuBar.add(mnuOrganization);
 
@@ -140,6 +149,11 @@ public class JSimsMain extends javax.swing.JFrame {
         faculty.toFront();
     }//GEN-LAST:event_mnuiViewCollegesActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        NewFieldOfStudy nn=new  NewFieldOfStudy(this,true);
+                nn.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -182,6 +196,7 @@ public class JSimsMain extends javax.swing.JFrame {
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenu mnuOrganization;
     private javax.swing.JMenuItem mnuiNewCollege;
